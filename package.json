@@ -20,6 +20,7 @@
   "homepage": "https://github.com/seanpweber/work-day-scheduler#readme",
   "dependencies": {
     "bulma": "^0.9.3",
+    "express": "^4.17.1",
     "if-env": "^1.0.4",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",
