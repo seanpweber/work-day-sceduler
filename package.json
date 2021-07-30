@@ -1,0 +1,36 @@
+{
+  "name": "work-day-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "nodemon start",
+    "build": "webpack --config client/webpack/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanpweber/work-day-scheduler.git"
+  },
+  "author": "Sean Weber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanpweber/work-day-scheduler/issues"
+  },
+  "homepage": "https://github.com/seanpweber/work-day-scheduler#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "nodemon": "^2.0.12",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
