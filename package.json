@@ -6,7 +6,8 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "nodemon start"
+    "start:dev": "nodemon start",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,14 +20,16 @@
   },
   "homepage": "https://github.com/seanpweber/work-day-scheduler#readme",
   "dependencies": {
-    "bulma": "^0.9.3",
+    "bootstrap": "^5.0.2",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "jquery": "^3.6.0",
-    "moment": "^2.29.1",
-    "webpack": "^5.47.1"
+    "moment": "^2.29.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "css-loader": "^6.2.0",
+    "nodemon": "^2.0.12",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.47.1"
   }
 }
