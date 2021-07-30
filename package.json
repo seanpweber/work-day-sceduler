@@ -7,7 +7,7 @@
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "nodemon start",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config client/webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "css-loader": "^6.2.0",
     "nodemon": "^2.0.12",
     "style-loader": "^3.2.1",
-    "webpack": "^5.47.1"
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
   }
 }

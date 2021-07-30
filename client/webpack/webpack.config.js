@@ -4,7 +4,7 @@ const path = require('path');
 // This is the main configuration object.
 // Here, you write different options and tell Webpack what to do
 module.exports = {
-  entry: './src/scripts/index.js',
+  entry: './client/src/scripts/index',
 
   // Path and filename of your result bundle.
   // Webpack will bundle all JavaScript into this file
