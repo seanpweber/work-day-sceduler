@@ -18,41 +18,45 @@
   </head>
 
   <body>
+    <!-- page loader -->
+    <div class="d-flex justify-content-center align-items-center" id="loader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
 
-    <header class="jumbotron">
-      <h1>
-        <div class="display-5">Work Day Scheduler</div>
-      </h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
+    <div id="contents" style="visibility: hidden">
+      <header class="jumbotron">
+        <h1>
+          <div class="display-5">Work Day Scheduler</div>
+        </h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
+      </header>
 
-    <div id="#clockTab" class="sticky-top">
-      <div id="clockBox">
-        <p id="currentTime">...</p>
-      </div>
-    </div>
-
-    <div class="container">
-    
-      <div class="card m-auto">
-        <table class="table align-middle text-center">
-          <tbody id="hour-block">
-            <!-- Hour blocks go here -->
-          </tbody>
-        </table>
+      <div id="#clockTab" class="sticky-top">
+        <div id="clockBox">
+          <p id="currentTime">...</p>
+        </div>
       </div>
 
-      <button class="btn btn-secondary col-12 col-lg-3 d-flex clear-tasks">
-        <p>Clear All Events</p>
-      </button>
+      <div class="container">
+      
+        <div class="card m-auto">
+          <table class="table align-middle text-center">
+            <tbody id="hour-block">
+              <!-- Hour blocks go here -->
+            </tbody>
+          </table>
+        </div>
 
+        <button class="btn btn-secondary col-12 col-lg-3 d-flex clear-tasks">
+          <p>Clear All Events</p>
+        </button>
+
+      </div>
+
+      <footer class="footer">
+        <h4 class="footer-lead">Sean Weber <i class="far fa-copyright"></i> 2021</h4>
+        <p class="footer-text"> View the source on <a href="https://github.com/seanpweber/workday-day-scheduler">Github</a>.</p>
+      </footer>
     </div>
-
-    <footer class="footer">
-      <h4 class="footer-lead">Sean Weber <i class="far fa-copyright"></i> 2021</h4>
-      <p class="footer-text"> View the source on <a href="https://github.com/seanpweber/workday-day-scheduler">Github</a>.</p>
-    </footer>
 
     <script src="client/webpack/client/bundle.js"></script>
   </body>
