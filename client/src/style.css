@@ -1,9 +1,89 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body {
+  background-color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+}
+
+h1 {
+  background-color: rgb(177, 177, 177);
+  width: auto;
+  padding: 1rem 2rem;
+}
+
+.lead {
+  color:rgb(177, 177, 177);
+  margin: 1rem;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #0e0e0e;
+  color: black;
+  border-radius: 0;
+  border-bottom: 5px solid #0e0e0e;
+}
+
+/* Clock styles */
+
+#clockBox {
+  text-align: center;
+  background-color: #0e0e0e;
+  padding: 1rem;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 0 0 0.35rem 0.35rem;
+}
+
+#currentTime {
+  color: white;
+  margin-bottom: 0;
+}
+
+/* Table styles */
+
+.card {
+  background-color: rgb(32, 32, 32);
+  border-radius: 1rem;
+  padding: 1rem 0 0 0;
+}
+
+.form-control {
+  border: none;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.form-control:hover {
+  background-color: #c2c2c21f;
+}
+
+.form-control:focus {
+  color: #ffffff;
+  background-color: #ffffff48;
+  border-color: #ffffff48;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 25%);
+}
+
+.hour-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 100px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
 }
 
 textarea {
@@ -15,53 +95,28 @@ textarea {
   padding: 10px;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 5px solid black;
-}
-
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
+/* Hour colors */
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #706f6f;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ffda61d2;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #12724294;
   color: white;
 }
 
+/* Save buttons */
+
 .saveBtn {
   border-radius: 50%;
-  background-color: #9306d5;
+  background-color: #127242;
   color: white;
 }
 
@@ -72,51 +127,29 @@ textarea {
   box-shadow: 0 0 5px #ffffff;
 }
 
-/* Table Style */
+/* Clear button */
 
-/* tr {
-  height: 100px;
-}
-
-th {
-  border-right: 1px solid black;
-}
-
-#btnBox {
-  border-left: 1px solid black;
-}
-
-#save0 {
-  margin: auto;
-} */
-
-.past {
-  background-color: rgb(80, 80, 80);
-  color: white;
-}
-
-.present {
-  background-color: rgb(60,190, 212);
-  color: white;
-}
-
-.future {
-  background-color: rgb(28, 104, 136);
-  color: white;
-}
-
-/* Clock styles */
-
-#clockBox {
-  background-color: #0e0e0e;
-  padding: 1rem;
-  width: 150px;
-  margin: auto;
-  margin-bottom: 1rem;
+.clear-tasks {
+  width: auto;
+  margin: 2rem auto;
   text-align: center;
 }
 
-#currentTime {
-  color: white;
-  margin-bottom: 0;
+.clear-tasks>p {
+  margin: auto;
+}
+
+/* Footer styles */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--gray);
+  padding: 2vh;
+}
+
+.footer-lead,
+.footer-text {
+  color: var(--light);
 }
