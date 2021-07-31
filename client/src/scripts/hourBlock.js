@@ -25,6 +25,11 @@ function buildTimeBlocks(hour){
         .addClass("col-8 col-lg-10");
     let taskText = $("<textarea></textarea>")
         .attr("type", "text")
+        .attr({
+            "data-toggle":"tooltip",
+            "data-placement": "top",
+            "title": "Enter tasks here"
+        })
         .addClass("d-flex form-control col-12 task-input");
     taskColumnEl.append(taskText);
     timeRowEl.append(taskColumnEl);
