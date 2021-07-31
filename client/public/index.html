@@ -31,124 +31,24 @@
     </header>
 
     <div class="container">
+
+      <div id="clockBox" class="sticky-top">
+        <p id="currentTime">...</p>
+      </div>
     
       <div class="card">
 
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <th scope="row" class="col-2">
-                9 am
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                10 am
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2"id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                11 am
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                12 pm
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                1 pm
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                2 pm
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                3 pm
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                4 pm
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row" class="col-2">
-                5 pm
-              </th>
-              <td  class="col-8">
-                <textarea id="task0" name="task0"></textarea>
-              </td>
-              <td class="col-2" id="btnBox">
-                <button type="submit" class="btn btn-primary btn-sm" id="save0" onClick='saveTask(this)'><i class="fas fa-cloud-upload-alt"></i></button>
-              </td>
-            </tr>
+        <table class="table caption-top align-middle text-center">
+          <tbody id="hour-block">
+            
           </tbody>
         </table>
 
       </div>
 
     </div>
+
+    <button class="btn btn-secondary col-12 col-lg-3 align-self-center clear-tasks">Clear All Events</button>
 
     <script src="client/webpack/client/bundle.js"></script>
   </body>
