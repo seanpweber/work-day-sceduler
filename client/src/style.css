@@ -47,6 +47,7 @@ h1 {
 
 .card {
   background-color: rgb(32, 32, 32);
+  max-width: 700px;
   border-radius: 1rem;
   padding: 1rem 0 0 0;
 }
