@@ -2,8 +2,9 @@
 import '../style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Dependencies
-import 'jquery';
-
 // Scripts
-import './moment';
+import './dateTime';
+import './task';
+import './hourBlock';
+
+import saveTask from '../scripts/task';

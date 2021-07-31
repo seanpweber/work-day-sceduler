@@ -10,6 +10,7 @@ textarea {
   background: transparent;
   border: none;
   width: 100%;
+  height: 100%;
   color: #000000;
   padding: 10px;
 }
@@ -19,7 +20,7 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 .description{
@@ -59,21 +60,21 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-radius: 50%;
+  background-color: #9306d5;
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.saveBtn:hover {
+  color:#ffffff;
+  font-size: 17px;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 5px #ffffff;
 }
 
 /* Table Style */
 
-tr {
+/* tr {
   height: 100px;
 }
 
@@ -83,4 +84,39 @@ th {
 
 #btnBox {
   border-left: 1px solid black;
+}
+
+#save0 {
+  margin: auto;
+} */
+
+.past {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+
+.present {
+  background-color: rgb(60,190, 212);
+  color: white;
+}
+
+.future {
+  background-color: rgb(28, 104, 136);
+  color: white;
+}
+
+/* Clock styles */
+
+#clockBox {
+  background-color: #0e0e0e;
+  padding: 1rem;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#currentTime {
+  color: white;
+  margin-bottom: 0;
 }
